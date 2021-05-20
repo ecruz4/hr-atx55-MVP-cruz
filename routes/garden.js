@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
       water: req.body.water,
       fertilize: req.body.fertilize,
       prune: req.body.prune,
-      photos: req.body.photos
+      photo: req.body.photo
     });
     newPlant.save()
       .then(plant => res.json(plant))

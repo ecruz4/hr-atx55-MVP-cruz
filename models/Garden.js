@@ -11,20 +11,20 @@ const GardenSchema = new Schema({
     default: Date.now
   },
   water: {
-    type: Number, 
+    type: Array, 
     required: true
   },
   fertilize: {
-    type: Number, 
+    type: Array, 
     required: true
   },
   prune: {
-    type: Number, 
+    type: Array, 
     required: true
   },
-  photos: {
-    type: Array, 
-    require: false
+  photo: {
+    type: String, 
+    require: true
   }
 });
 
