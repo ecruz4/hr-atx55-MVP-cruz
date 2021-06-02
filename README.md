@@ -37,7 +37,6 @@
       <li><a href="#repo">Repo</a></li>
       <li><a href="#install">Install</a></li>
       <li><a href="#start-scripts">Start Scripts</a></li>
-      <li><a href="#google-maps-api-key">Google Maps API Key</a></li>
      </ul>
     </li>
   </ol>
