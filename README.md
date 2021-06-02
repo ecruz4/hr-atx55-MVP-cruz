@@ -120,7 +120,7 @@ The objective of the plntr. website was to make a site that allowed indoor garde
     <tr>
       <th>Deployment</th>
       <td>
-        <img alt="Heroku" src=" 	https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
+        <img alt="Heroku" src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
       </td>
     </tr>
   </tbody>
