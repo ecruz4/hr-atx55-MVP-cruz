@@ -44,7 +44,7 @@
 
 # About
 
-The objective of the plntr. website was to make a site that allowed indoor gardeners to keep track of their pruning, fertilizing, and watering schedules for their indoor plants.  I was given two days to complete this project and it consists of a single page application that utilizes the MERN stack to store and render the user's garden and schedule on that single page.
+The objective of the plntr. website was to make a site that allowed indoor gardeners to keep track of their pruning, fertilizing, and watering schedules for their indoor plants.  I was given two days to complete this project and it consists of a single page application that utilizes the MERN stack to store user data in a Mongo Atlas Database and render the user's garden and schedule on that single page.
 
 ## Home Page 
 
