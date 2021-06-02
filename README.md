@@ -30,10 +30,6 @@
     <li><a href="#add-plant">Add Plant</a></li>
     <li>
      <a href="#workflow">Workflow</a>
-     <ul>
-      <li><a href="#trello">Trello</a></li>
-      <li><a href="#version-control">Version Control</a></li>
-     </ul>
     </li>
     <li>
      <a href="#development">Development</a>
@@ -64,7 +60,7 @@ The objective of the plntr. website was to make a site that allowed indoor garde
 
 **Features:**
 
-- _ Garden Card_: Created using the Material UI Avatar component and also has an added Edit Icon using Material UI Badges if the user is viewing their own profile.
+- _Garden Card_: Created using the Material UI Avatar component and also has an added Edit Icon using Material UI Badges if the user is viewing their own profile.
 - _Delete Icon_: Displays the user's basic contact information and location.
 
 ![](https://media.giphy.com/media/un8jCt1i2AxIBSv0Q3/giphy.gif)
@@ -129,7 +125,7 @@ I used Agile Workflow for this project.
 
 ## Repo
 
-`git clone https://github.com/hratx-blue-ocean/adriatic-common-ground`
+`git clone https://github.com/ecruz4/plntr.git`
 
 ## Install
 
