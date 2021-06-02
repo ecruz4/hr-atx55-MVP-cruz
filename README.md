@@ -11,7 +11,7 @@
     <br />
     <a href="https://github.com/ecruz4">Eric Cruz</a>
      </h3>
-     <img alt="home-page" src="https://media.giphy.com/media/7zuWaxZMECPW6OrzBk/giphy.gif" />
+     <img align="center" alt="home-page" src="https://media.giphy.com/media/7zuWaxZMECPW6OrzBk/giphy.gif" />
   </p>
 </p>
 
