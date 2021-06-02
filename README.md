@@ -55,21 +55,17 @@ The objective of the plntr. website was to make a site that allowed indoor garde
 
 **Features:**
 
-- _Nav Bar_
-- _Charity Information_
-- _Charity Feature Cards_
-- _Footer_
-- _Routing_
+- _Notification_: Displays notification cards for current plant maintenance. Three Icons on the top of each card dictate which type of maintenance needs to be performed for the day (pruning - scissors, fertilizing - leaf, watering - water drop).
+- _Garden_: There is a section that consists of cards that make up the user's 'garden'
+- _Add Plant_: This section is used to add plants and the necessary maintenance schedule to the user's garden.
 
 
 ## Garden 
 
 **Features:**
 
-- _Profile Picture_: Created using the Material UI Avatar component and also has an added Edit Icon using Material UI Badges if the user is viewing their own profile.
-- _Profile Information_: Displays the user's basic contact information and location.
-- _Offer Detail Cards Display_: The Card Display/Profile Feed is a list of all the offers/requests made by that particular user.
-- _Editable Information_: By clicking on the Edit Icon, a modal will appear for the user to modify any of their profile information. These changes occur real-time.
+- _ Garden Card_: Created using the Material UI Avatar component and also has an added Edit Icon using Material UI Badges if the user is viewing their own profile.
+- _Delete Icon_: Displays the user's basic contact information and location.
 
 ![](https://media.giphy.com/media/un8jCt1i2AxIBSv0Q3/giphy.gif)
 
@@ -77,8 +73,8 @@ The objective of the plntr. website was to make a site that allowed indoor garde
 
 **Features:**
 
-- _Charitable requests & donations listing_: User is able to toggle between an interface displaying all requests from organizations, sorted by urgency, and one showing all charitable donations, sorted by time to expiration. Data is paginated and fetched as needed to improve performance, and presented on animated, interactive Material-UI cards. From within each card, the user can view more details about the listing, its owner, or initiate a live chat with the associated account.
-- _Search Feature_: A case-insensitive search by item name, allowing the user to quickly find relevant donations or requests on the listings page. On the "Charities" page, more criteria is available for search, including by name, city, state, and charitable theme.
+- _Maintenance Schedule_: Here the user can fill out information regarding the plant they wish to add to their garden. There are pre-defined options for the watering, fertilizing, and pruning schedule which allow the user to choose once or twice a week or daily for watering, and once, twice, or weekly per month for the fertilizing and pruning schedules.
+- _Image_: The user can choose to insert an image URL if they choose to do so which will populate the avatar image on each card with the image URL provided.
 
 ![](https://media.giphy.com/media/uh406AOUkx6GsNnQzD/giphy.gif)
 
@@ -129,17 +125,7 @@ The objective of the plntr. website was to make a site that allowed indoor garde
 
 # Workflow
 
-Our team used Agile workflow for this sprint.
-
-## Trello
-
-A Trello board was used to create and track tickets. We held daily scrum meetings to discuss accomplishments, challenges, and upcoming tickets. To effectively collaborate remotely while allowing for quick communication if needed, we utilized Discord, Slack, and Zoom.
-
-## Version Control
-
-We implemented Git Feature Branch Workflow. All pull requests in Github were reviewed by another team member before being merged into the main branch.
-
-# Development
+I used Agile Workflow for this project.
 
 ## Repo
 
@@ -151,20 +137,8 @@ We implemented Git Feature Branch Workflow. All pull requests in Github were rev
 
 ## Start Scripts
 
+Currently uses concurrently to start the server and the client at the same time for development.
+
 ```
-npm start
-npm run build
+npm run dev
 ```
-
-## Google Maps API Key
-
-To properly render the map in the details page, you must create a Google Maps API token and place it into config.js within the src directory.
-
-To create an API key:
-
-1. Go to: https://console.cloud.google.com/project/_/apiui/credential
-2. On the credentials page, click Create credentials > API Key.
-   The API key created dialog displays your newly created API key.
-3. Click Close.
-   The new API key is listed on the Credentials page under API keys.
-   (Remember to restrict the API key before using it in production.)
