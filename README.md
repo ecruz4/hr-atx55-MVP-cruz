@@ -59,8 +59,8 @@ The objective of the plntr. website was to make a site that allowed indoor garde
 
 **Features:**
 
-- _Garden Card_: Created using the Material UI Avatar component and also has an added Edit Icon using Material UI Badges if the user is viewing their own profile.
-- _Delete Icon_: Displays the user's basic contact information and location.
+- _Garden Card_: There is card for each of the user's plants stored in their garden which consists of an avatar image of the plant, the plant name, and the date planted.
+- _Delete Icon_: A small trash icon on each card which allows the user to 'delete' the plant from the database and from their garden.
 
 ![](https://media.giphy.com/media/un8jCt1i2AxIBSv0Q3/giphy.gif)
 
