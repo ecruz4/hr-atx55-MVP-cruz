@@ -5,6 +5,8 @@ const path = require('path');
 const garden = require('./routes/garden');
 const cors = require('cors');
 
+require('dotenv').config();
+
 //Create your server application using express:
 const app = express();
 
