@@ -5,8 +5,6 @@ const path = require('path');
 const garden = require('./routes/garden');
 const cors = require('cors');
 
-require('dotenv').config();
-
 //Create your server application using express:
 const app = express();
 
@@ -16,8 +14,6 @@ const PORT = process.env.PORT || 5000;
 //DB Config/Connection:
 // const db = require('./config/keys').mongoURI;
 // const db = `mongodb+srv://eric-cruz:${password}@mvp.3eehr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
-
-mongoose.Promise = global.Promise;
 
 const db = process.env.MONGODB_URI
 mongoose
