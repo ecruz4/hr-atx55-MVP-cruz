@@ -15,6 +15,8 @@ const PORT = process.env.PORT || 5000;
 // const db = require('./config/keys').mongoURI;
 // const db = `mongodb+srv://eric-cruz:${password}@mvp.3eehr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
+mongoose.Promise = global.Promise;
+
 const db = process.env.MONGODB_URI
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -31,12 +33,11 @@ app.use('/api/garden', garden);
 
 //Serve Static Assets in Production:
 if(process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, 'client', 'build')));
+  app.use(express.static('client/build'));
 
   app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
-    }
-  )
+    res.sendFile(path.resolve(__dirname, 'client', 'build'));
+  })
 }
 
 app.listen(PORT, () => {
