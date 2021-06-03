@@ -11,10 +11,13 @@ const app = express();
 //Define your port number:
 const PORT = process.env.PORT || 5000;
 
-const password = process.env.MONGOPASSWORD || 'EllaCruz21';
 //DB Config/Connection:
 // const db = require('./config/keys').mongoURI;
-const db = `mongodb+srv://eric-cruz:${password}@mvp.3eehr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+// const db = `mongodb+srv://eric-cruz:${password}@mvp.3eehr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+
+mongoose.Promise = global.Promise;
+
+const db = process.env.MONGODB_URI
 mongoose
   .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB Connected'))
